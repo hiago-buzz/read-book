@@ -1,11 +1,12 @@
 from flask import Flask, Blueprint
 from flask_restplus import Api
+from flask_cors import CORS
 from werkzeug.contrib.fixers import ProxyFix
-
 
 from app.main.book.book_controller import api as home_ns
 
 app = Flask(__name__)
+CORS(app)
 app.wsgi_app = ProxyFix(app.wsgi_app)
 blueprint = Blueprint('api', __name__)
 app.register_blueprint(blueprint)

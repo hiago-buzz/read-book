@@ -33,14 +33,17 @@ class BookDb:
             con.close()
 
     @classmethod
-    def indexAll(cls):
+    def index(cls, id=None):
+        where = f"where id = {id}" if id else ""
+        query = f'select * from books {where}'
+
         try:
             with sql.connect('database.db') as con:
                 con.row_factory = sql.Row
 
                 cur = con.cursor()
-                cur.execute("select * from books")
-                print(cur)
+                cur.execute(query)
+
                 sts = '200'
                 msg = "Listed success"
 
@@ -64,4 +67,54 @@ class BookDb:
             return Response.format_response(sts, msg)
             con.close()
 
-            
+    @classmethod
+    def update(cls, id, payload):
+
+        title = payload['title']
+        author = payload['author']
+        finish = payload['finish']
+        genre = payload['genre']
+
+        try:
+            with sql.connect('database.db') as con:
+                cur = con.cursor()
+                cur.execute("""
+                    UPDATE books SET 
+                        title = ?,
+                        author = ?, 
+                        finish = ?, 
+                        genre = ?
+                    WHERE id = ?
+                """, (title, author, finish, genre, id))
+
+                sts = '200'
+                msg = "Update success"
+
+                return Response.format_response(sts, msg)
+                con.close()
+        except:
+            sts = '500'
+            msg = f"error in update operation"
+
+            return Response.format_response(sts, msg)
+            con.close()
+
+    @classmethod
+    def delete(cls, id):
+
+        try:
+            with sql.connect('database.db') as con:
+                cur = con.cursor()
+                cur.execute(f'DELETE from books WHERE id = {id}')
+
+                sts = '200'
+                msg = "Delete success"
+
+                return Response.format_response(sts, msg)
+                con.close()
+        except:
+            sts = '500'
+            msg = f"error in delete operation"
+
+            return Response.format_response(sts, msg)
+            con.close()
