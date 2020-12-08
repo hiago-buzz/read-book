@@ -10,5 +10,9 @@ class Response:
             if e in sts:
                 return response 
 
-        response["status"] = 200
+        if(sts is not '200'):
+            response['status'] = int(sts)
+        else:
+            response["status"] = 200
+            
         return response
