@@ -1,16 +1,16 @@
-# :READ BOOK
+# READ BOOK
 
 - Este projeto se baseia em uma API REST que tem como função cadastrar livros lidos por usuários préviamente cadastrados.
 
 <p align="center">
-  <a href="#dependencias">DEPENDÊNCIAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#como-usar">COMO USAR O PROJETO?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rotas">ROTAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#contribua">COMO CONTRIBUIR?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#DEPENDÊNCIAS">DEPENDÊNCIAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#COMO USAR O PROJETO?">COMO USAR O PROJETO?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#ROTAS">ROTAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#COMO CONTRIBUIR?">COMO CONTRIBUIR?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">LICENÇA</a>
 </p>
 
-## :dependencias: DEPENDÊNCIAS
+## DEPENDÊNCIAS
     ![Python Badge](https://www.python.org/)
     ![Flask Badge](https://flask.palletsprojects.com/en/1.1.x/)
     ![Flask-Restplus Badge](https://flask-restplus.readthedocs.io/en/stable/)
@@ -19,7 +19,7 @@
 
 
  
-## :como-usar: COMO USAR O PROJETO?
+## COMO USAR O PROJETO?
 
 - CLONE O PROJETO:
     `git clone https://github.com/hiago-buzz/read-book.git`
@@ -38,7 +38,7 @@
 - INICIE O SERVIDOR: `python run.py`
     Após isso o servidor iniciar em: `http://localhost:5500`
 
-## :rotas: ROTAS
+## ROTAS
 
 - A documentação é gerada automaticamente durante o desenvolvimento com o `swagger` sendo possível visualizar em `http://localhost:5500`.
 - Todas as rodas da api utilizam o prefixo `/api`, seguido do endpoint desejado, sendo necessário o parametro `user_name` nos headers de cada requisição;
@@ -64,7 +64,7 @@ Livros:
 - USUÁRIOS:
 ...
 
-## :contribua: COMO CONTRIBUIR?
+## COMO CONTRIBUIR?
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b feature`;
