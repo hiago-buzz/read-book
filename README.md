@@ -11,11 +11,9 @@
 </p>
 
 ## DEPENDÊNCIAS
-    [![Python Badge](https://i.imgur.com/WBvNDfq.jpg)](https://www.python.org/)
-    ![Flask Badge](https://flask.palletsprojects.com/en/1.1.x/)
-    ![Flask-Restplus Badge](https://flask-restplus.readthedocs.io/en/stable/)
-    ![Werkzeug Badge](https://werkzeug.palletsprojects.com/en/1.0.x/)
-    ![SQlite Badge](https://sqlite.org/index.html)
+  <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
+  <img src ="https://img.shields.io/badge/sqlite-%2307405e.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>
 
 
  
@@ -50,7 +48,6 @@ Livros:
 
 * Exemplo de payload POST:
 
-    '''
         {
         "title": "string",
         "author": "string",
@@ -58,7 +55,7 @@ Livros:
         "genre": "string",
         "user_name": "string"
         }
-    ''' 
+        
 - `/api/book/:id` recebe os métedos `GET`, `PUT` e `DELETE`
 
 - USUÁRIOS:
