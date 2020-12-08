@@ -6,12 +6,12 @@
   <a href="#DEPENDÊNCIAS">DEPENDÊNCIAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#COMO USAR O PROJETO?">COMO USAR O PROJETO?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#ROTAS">ROTAS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#COMO CONTRIBUIR?">COMO CONTRIBUIR?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#COMO-CONTRIBUIR?">COMO CONTRIBUIR?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">LICENÇA</a>
 </p>
 
 ## DEPENDÊNCIAS
-    ![Python Badge](https://www.python.org/)
+    [![Python Badge](https://i.imgur.com/WBvNDfq.jpg)](https://www.python.org/)
     ![Flask Badge](https://flask.palletsprojects.com/en/1.1.x/)
     ![Flask-Restplus Badge](https://flask-restplus.readthedocs.io/en/stable/)
     ![Werkzeug Badge](https://werkzeug.palletsprojects.com/en/1.0.x/)
